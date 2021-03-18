@@ -1,0 +1,4 @@
+Uses a customer user.
+Also uses postgres.
+This has a separate user authentification. You can register a new user at
+domain/user/register
