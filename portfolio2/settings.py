@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'image_app.apps.ImageAppConfig',
     'crispy_forms',
     'todo.apps.TodoConfig',
+    'envelope.apps.EnvelopeConfig'
 ]
 
 MIDDLEWARE = [
