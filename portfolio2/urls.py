@@ -10,6 +10,7 @@ from todo import views as todo_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/',include('user.urls')),
+    #path('envelope/',include('envelope.urls')),
     path('success/', success, name = 'success'), 
     path('image_upload/', hotel_image_view, name = 'image_upload'), 
     path('',todo_view.todo,name='todo'),

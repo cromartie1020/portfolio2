@@ -1,7 +1,7 @@
 from django import forms
-from .models import Employee
+from .models import Envelope
 
-class EmployeeForm(forms.ModelForm):
+class EnvelopeForm(forms.ModelForm):
     class Meta:
-        model = Employee
+        model = Envelope
         fields='__all__' 
