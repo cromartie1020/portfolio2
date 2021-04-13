@@ -35,7 +35,8 @@ INSTALLED_APPS = [
     'image_app.apps.ImageAppConfig',
     'crispy_forms',
     'todo.apps.TodoConfig',
-    'envelope.apps.EnvelopeConfig'
+    'envelope.apps.EnvelopeConfig',
+    'post.apps.PostConfig',
 ]
 
 MIDDLEWARE = [
@@ -122,7 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT=os.path.join(BASE_DIR,'static')
-MEDIA_URL='media/'
+MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 AUTH_USER_MODEL ='user.CustomUser'
 CRISPY_TEMPLATE_PACK='bootstrap4'

@@ -17,7 +17,7 @@
     </title>
   </head>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Cromartie's Site</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,9 +35,11 @@
         <li class="nav-item">
           <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
         </li>
+        <!--
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
+        -->
       </ul>
     </div>
   </nav>
@@ -64,10 +66,12 @@
     <h1>Training Insights </h1>
     <div class="card-group">
         <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="{% static 'user/postgresql.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Postgresql</h5>
+            <p class="card-text">A popular database that can be easily used with django. Has been around since October of 1996. Volunteers have maintained and updated the program being
+              that it is an open source program.
+            </p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Last updated 3 mins ago</small>
